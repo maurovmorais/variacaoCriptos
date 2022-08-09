@@ -27,7 +27,7 @@ Binance_Coin = ''
 lista = []
 
 #Lista de criptos
-criptos = ['cotacao_bitcoin','cotacao_ethereum','Litecoin','Cardano','Binance_Coin']
+criptos = ['cotacao_bitcoin','cotacao ethereum','Litecoin','Cardano','Binance_Coin']
 
 for i,moedas in enumerate(criptos):
     def cripto(navegador_cripto):
