@@ -1,0 +1,19 @@
+USE [PythonSQL]
+GO
+
+/****** Object:  Table [dbo].[criptos]    Script Date: 16/08/2022 11:53:33 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[criptos](
+	[data] [varchar](100) NULL,
+	[bitcoin] [decimal](18, 2) NULL,
+	[ether] [decimal](18, 2) NULL,
+	[litecoin] [decimal](18, 2) NULL,
+	[cardano] [decimal](18, 2) NULL,
+	[binance] [decimal](18, 2) NULL
+) ON [PRIMARY]
+GO
