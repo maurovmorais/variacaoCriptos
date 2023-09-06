@@ -1,4 +1,3 @@
-from numpy import var
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -33,8 +32,8 @@ for i,moedas in enumerate(criptos):
     def cripto(navegador_cripto):
         navegador.get(navegador_cripto)
         # Fazer a Pesquisa Cripto
-        navegador.find_element('xpath','/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input').send_keys(moedas)
-        navegador.find_element('xpath','/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input').send_keys(Keys.ENTER)
+        navegador.find_element('xpath','/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea').send_keys(moedas)
+        navegador.find_element('xpath','/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea').send_keys(Keys.ENTER)
         # Pegar o valor da cotação do dolar
         variacao=navegador.find_element('xpath','//*[@id="crypto-updatable_2"]/div[3]/div[5]/div[2]/input').get_attribute('value')
         return variacao
